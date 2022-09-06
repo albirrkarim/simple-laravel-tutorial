@@ -20,6 +20,26 @@ I suggest 8.0. [install](https://www.google.com/search?q=install+php+8.0+brew)
 
 ## B. Setting UP
 
+### Prepare dependencies
+
+#### PHP dependencies
+
+```
+composer install
+```
+
+if the command above is error use
+
+```
+composer update
+```
+
+#### Node js dependencies
+
+```
+npm install
+```
+
 ### Make Database
 
 Goto phpmyadmin and create empty database. (just let it empty)
@@ -58,25 +78,26 @@ php artisan storage:link
 
 This command will create symbolic link in `public` folder. link to `storage/app/public`
 
-### Compile Build asset
+### Compile Build asset / Watch
 
 Im use laravel mix.
 
+If you want upload on server -> Make Production Asset
 
-Install node dependencies
-```
-npm install
-```
-
-Make Production Asset
 ```
 npm run prod
+```
+
+If you want develop and editing the react js code -> Tell laravel mix to watch code changes.
+
+```
+npm run watch
 ```
 
 ## C. Run
 
 run command in laravel directory
 
-``` 
+```
 php artisan serve
 ```
