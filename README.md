@@ -76,6 +76,12 @@ php artisan migrate
 php artisan jwt:secret
 ```
 
+### Generate Key
+
+```
+php artisan key:generate
+```
+
 ### Storage Link
 
 ```
