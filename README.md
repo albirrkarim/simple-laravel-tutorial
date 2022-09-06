@@ -78,7 +78,16 @@ php artisan storage:link
 
 This command will create symbolic link in `public` folder. link to `storage/app/public`
 
-### Compile Build asset / Watch
+## C. Run
+
+### Run the laravel (PHP)
+run command in laravel directory
+
+```
+php artisan serve
+```
+
+### Compile Build asset / Watch (Node js)
 
 Im use laravel mix.
 
@@ -92,12 +101,4 @@ If you want develop and editing the react js code -> Tell laravel mix to watch c
 
 ```
 npm run watch
-```
-
-## C. Run
-
-run command in laravel directory
-
-```
-php artisan serve
 ```
