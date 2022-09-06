@@ -40,6 +40,12 @@ composer update
 npm install
 ```
 
+if you getting error, just force it
+
+```
+npm install -f
+```
+
 ### Make Database
 
 Goto phpmyadmin and create empty database. (just let it empty)
