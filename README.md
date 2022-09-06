@@ -8,6 +8,8 @@ This tutorial for laravel 8 in Mac OS
 
 Just download [xampp](https://www.apachefriends.org/download.html)
 
+![](img/xampp.png)
+
 Everytime you need apache you can just activate it.
 
 ### Install Composer
