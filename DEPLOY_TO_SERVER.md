@@ -97,8 +97,18 @@ This command will create symbolic link in `public` folder. link to `storage/app/
 
 ### Setting Nginx
 
+
+Open the Nginx config file with
+
+```
+sudo nano /etc/nginx/sites-available/default
+```
+
+Add this code
+
+```
 server {
-root /home/admin/YOUR_LARAVEL/public;
+        root /home/admin/YOUR_LARAVEL/public;
 
         listen [::]:8000 ssl ipv6only=on;
         listen 8000 ssl;
@@ -109,5 +119,5 @@ root /home/admin/YOUR_LARAVEL/public;
         ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem; # managed by Certbot
         include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
         ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
-
 }
+```
