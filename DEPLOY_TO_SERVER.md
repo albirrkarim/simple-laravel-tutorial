@@ -121,3 +121,9 @@ server {
         ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 }
 ```
+
+Access the laravel with
+
+```
+https://example.com:8000
+```
