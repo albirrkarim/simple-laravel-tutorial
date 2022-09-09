@@ -14,6 +14,9 @@ In here i using ubuntu 20.04 and Nginx (whitout cpanel or site management system
 
 [Install MySQL](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
 
+
+[Install phpmyadmin on nginx](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-with-nginx-on-an-ubuntu-20-04-server)
+
 ## B. Setting UP
 
 ### Place laravel
