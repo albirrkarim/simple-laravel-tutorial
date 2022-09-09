@@ -12,6 +12,8 @@ In here i using ubuntu 20.04 and Nginx (whitout cpanel or site management system
 
 [Install Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04)
 
+[Install MySQL](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
+
 ## B. Setting UP
 
 ### Place laravel
@@ -93,7 +95,7 @@ This command will create symbolic link in `public` folder. link to `storage/app/
 ### Setting Nginx
 
 server {
-        root /home/admin/YOUR_LARAVEL/public;
+root /home/admin/YOUR_LARAVEL/public;
 
         listen [::]:8000 ssl ipv6only=on;
         listen 8000 ssl;
@@ -104,4 +106,5 @@ server {
         ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem; # managed by Certbot
         include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
         ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
 }
